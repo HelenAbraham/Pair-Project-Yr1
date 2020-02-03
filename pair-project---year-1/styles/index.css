@@ -1,0 +1,37 @@
+main {
+    padding: 0 30px;
+}
+
+@media only screen and (min-width: 0px) {
+    main section {
+        display: block;
+        text-align: center;
+    }
+    main section .desc {
+        margin: 0px;
+    }
+    #yIframe, #welcome {
+        height: auto;
+        width: 100%;
+    }
+    #yIframe {
+        height: 50vh;
+    }
+    
+}
+@media only screen and (min-width: 800px) {
+    main section {
+        display: flex;
+        text-align: right;
+        justify-content: center;
+    }
+    main section .desc {
+        margin: 20px;
+    }
+    #yIframe, #welcome {
+        height: 400px;
+        width: 600px;
+        
+        margin: 0;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/learning-resources/html_css.css">
+    <link rel="stylesheet" href="../styles/learning-resources/comments.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>HTML & CSS - Learn </title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>SAKK<span class=thereddot>.</span></h1>
+      </div>
+      <div id="links">
+        <a href="../index.html">Home</a>
+        <a href="../tutorials.html">Tutorials</a>
+        <a href="./learning_resources.html">Resources</a>
+        <a href="../profiles/profiles.html">Profiles</a>
+        <a href="../blog.html">Blog<span class="thereddot small">.</span></a>
+        <a href="../about.html">About Us</a>
+      </div>
+    </nav>
+    <main>
+
+      <h2> Resourceful Sites to Learn HTML & CSS </h2>
+
+    <center>
+      <table style="width:90%">
+        <tr>
+          <th> Brief Discription </th>
+          <th> Resource Type </th>
+          <th> Hyperlink </th>
+          <th> Justification & Usefulness </th>
+        </tr>
+        <tr>
+          <td> W3 Schools | Educational Website to learn various programming languages such as HTML, CSS, Python, JavaScript, etc. </td>
+          <td> Educational / Tutorial Website </td>
+          <td> www.w3schools.com </td>
+          <td> Very helpful and useful especially for beginners. Simplified to enhance understanding and knowledge. Interactive, allowing easy and quick learning. </td>
+       </tr>
+       <tr>
+         <td> Code Academy | An interactive educational platform, offering free classes in 12 different programming languages such as Ruby, SQL, Sass, etc. </td>
+         <td> Educational / Tutorial Website </td>
+         <td> www.codeacademy.com/learn/learn-html </td>
+         <td> Interface and features boost motivation to learn coding. Also, makes coding fun and rewarding. Platform focused on teaching beginners especially those who don’t have any experience. </td>
+       </tr>
+       <tr>
+         <td> Learn-HTML.org | An interactive educational platform allowing users to learn coding fast. Programming languages range from Go, C++, PHP, Shell, etc. </td>
+         <td> Educational / Tutorial Website </td>
+         <td> www.learn-html.org </td>
+         <td> Provides a window to allow the user to write, practice and execute their own practices and code. Provides an interactive tutorial that explains/shows how to do certain things, step by step. </td>
+      </tr>
+    </table>
+  </center>
+
+<br>
+  <h2> Cheat Sheet for CSS, for writing Quality Coding </h2>
+
+  <center>
+  <table >
+     <tr>
+       <th> Organisation </th>
+       <th> Comments </th>
+       <th> Separate CSS file </th>
+       <th> Aviod Repetition </th>
+     </tr>
+     <tr>
+       <td> Make sure to use a coherent structure – When doing so, it allow you to easily overwrite anything, when you have to. Therefore it will be more easier to edit and make certain changes, as its more easier to read and is in a logical structure </td>
+       <td> Comments are prefixed with ‘#’. Comments provide the purpose or the intent of that piece of code. Also, it provides more detail about the code itself </td>
+       <td> Make sure the CSS has its own style sheet, keeping it clean and manageable </td>
+       <td> Try to group elements instead of declaring styles. For example, if the headers, use the same layout/format – uses the same size, colour, font, etc – group them together </td>
+     </tr>
+  </table>
+  </center>
+
+       <br>
+         <h2> Cheat Sheet for HTML, for writing Quality Coding  </h2>
+
+       <center>
+       <table >
+          <tr>
+            <th> Declare a Doctype </th>
+            <th> Closing Tags </th>
+            <th> Title Tag </th>
+            <th> Validating code </th>
+          </tr>
+          <tr>
+            <td> When creating an HTML file, its always important to declare its Doctype, since it tells the browser, the standards you will be using, also helping it to render  your mark-up language accurately </td>
+            <td> To avoid validation and compatibility issues, always remember to close every tag created </td>
+            <td> This tag makes the web-page more purpose and search engine friendly. Therefore, make sure the content written in this tag, is helpful and precise as this will appear on search engines plus web browsers bars and tabs </td>
+            <td> It is good practice that you validate your code frequently instead of doing it at the end. This will help save time and you’ll be able to spot any errors early on, otherwise it’ll be more difficult to resolve any issues.
+W3C markup validation service is commonly used. Its an helpful debugger, used to identify any rendering or validation problems </td>
+          </tr>
+        </table>
+        </center>
+        
+        <section id="comments">
+          <div class="container">
+            <h1>Comments</h1>
+            <div id="comments-area"></div>
+            <div class="comments-input">
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" id="name"><br>
+              <label for="comment">Comment:</label><br>
+              <textarea name="comment" id="comment" cols="70" rows="10" placeholder="This is awesome!"></textarea><br>
+              <input type="button" value="Send!" onclick="sendComment()">
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="copyright">
+      <div class="content">
+        <div class="logo">
+          <p>SAKK<span class=thereddot>.</span></p>
+        </div>
+        <div id=copyright>
+          <p>&copy2018 Soma | Helen</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/commenting.js"></script>
+  </body>
+</html>

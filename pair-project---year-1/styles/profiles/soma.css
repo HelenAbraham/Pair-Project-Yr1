@@ -1,0 +1,52 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(230px, 30vw));
+    grid-gap: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+.grid section {
+    border: 1px solid black;
+    min-width: 230px;
+    transition: .2s;
+}
+.grid section .title {
+    border-bottom: 1px solid var(--border-color);
+}
+.grid section .title h1 {
+    margin: 0 0 5px 50px;
+}
+.grid section .content {
+    margin: 1.5vh 1vw 1vh 1vw;
+    padding: 5px;
+}
+.grid section:hover {
+    transition: .2s;
+    transform: scale(1.01);
+}
+#skills {
+    grid-row: span 2;
+}
+#edu {
+    grid-column: span 2;
+}
+#edu table{ 
+    width: 100%;
+    text-align: end;
+}
+#hobbies {
+    font-size: var(--medium-text);
+}
+#hobbies h1 {
+    font-size: var(--large-text);
+}
+@media only screen and (max-width: 820px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(230px, 30vw));
+    }
+}
+@media only screen and (max-width: 520px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(230px, 30vw));
+    }
+}

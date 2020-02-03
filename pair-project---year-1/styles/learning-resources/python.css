@@ -1,0 +1,16 @@
+#python-pdf {
+    width: 92vw;
+    height: 92vh;
+    display: block;
+    margin: 0 auto;
+}
+main h1 {
+    margin: 20px;
+    font-size: var(--large-text);
+}
+.failsafe a {
+    font-size: var(--small-text);
+    color: blue;
+    text-decoration: underline;
+    margin: 0 0 0 20px;
+}

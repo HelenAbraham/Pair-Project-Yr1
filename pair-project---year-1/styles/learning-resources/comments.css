@@ -1,0 +1,33 @@
+#comments {
+    border-top: 2px solid var(--border-color);
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+#comments .container {
+    width: 92vw;
+}
+#comments h1 {
+    margin: 10px 0 1vh 3vw;
+}
+#comments .comments-input {
+    border-top: 1px solid var(--border-color);
+    margin: 10px 0 1vh 1vw;
+    padding: 0 0 0 2vw;
+}
+#comments #comments-area {
+    margin: 10px 0 1vh 1vw;
+    padding: 0 0 0 2vw;
+}
+#comments .feedbacker {
+    margin: 5px 0;
+}
+#comments .date {
+    font-size: var(--small-text);
+    border-bottom: 1px solid lightblue;
+}
+#comments .comment {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px 0;
+}

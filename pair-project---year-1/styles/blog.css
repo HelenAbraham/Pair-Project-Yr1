@@ -1,0 +1,9 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-comment {
+    width: 92vw;
+    margin: 2vh 0;
+}

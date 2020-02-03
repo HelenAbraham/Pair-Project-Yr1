@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/learning-resources/html_css.css"> <!--didnt make a separate style sheet for JS, since the format/design is the same as for HTML&CSS -->
+    <link rel="stylesheet" href="../styles/learning-resources/comments.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title> JavaScript - Learn </title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>SAKK<span class=thereddot>.</span></h1>
+      </div>
+      <div id="links">
+        <a href="../index.html">Home</a>
+        <a href="../tutorials.html">Tutorials</a>
+        <a href="./learning_resources.html">Resources</a>
+        <a href="../profiles/profiles.html">Profiles</a>
+        <a href="../blog.html">Blog<span class="thereddot small">.</span></a>
+        <a href="../about.html">About Us</a>
+      </div>
+    </nav>
+    <main>
+
+      <h2> Resourceful Sites to Learn JavaScript </h2>
+
+    <center>
+      <table style="width:90%">
+        <tr>
+          <th> Brief Discription </th>
+          <th> Resource Type </th>
+          <th> Hyperlink </th>
+          <th> Justification & Usefulness </th>
+        </tr>
+        <tr>
+          <td> JavaScript – The Right Way | Community driven best practices and best resources guide for JavaScript. </td>
+          <td> Community Guide  </td>
+          <td> www.jstherightway.org </td>
+          <td> Community driven. Open source. Git hub project, backed up by large JavaScript companies/firms, like npm and Gulp.  They reference to plenty of external sources like the Mozilla development network and the google code style guide for JavaScript. </td>
+       </tr>
+       <tr>
+         <td> Google JavaScript Style Guide | JavaScript style guide by google. Incudes policies, Appendices, formatting, etc. </td>
+         <td> Documentation  </td>
+         <td> www.google.github.io/styleguide/jsguide.html </td>
+         <td> Official guide of Google and is recommended to be used when using google chrome.  Serves as a complete definition of Google’s coding standards for JavaScript. </td>
+       </tr>
+       <tr>
+         <td> W3 Schools | Beginner friendly best practices, with code examples. </td>
+         <td> Educational / Tutorial Website </td>
+         <td> www.w3schools.com/js/js_best_practices.asp </td>
+         <td> Provides a ‘sandbox’, allowing beginners to experiment. Uses less professional language, therefore easier to understand – beneficial for beginners. However, less accurate on its information. </td>
+      </tr>
+    </table>
+  </center>
+
+       <br>
+         <h2> Cheat Sheet for JavaScripts </h2>
+
+       <table >
+          <tr>
+            <th> “For in” statements </th>
+            <th> Use of Semicolons </th>
+            <th> Declaring Local Variables </th>
+            <th> Comments </th>
+            <th> Equality Operators </th>
+            <th> Parameter Defaults </th>
+          </tr>
+          <tr>
+            <td>
+              Sometimes, you will discover that you’ll also save method functions as well. Therefore, you need to use an if statement, which will filter information
+              (Douglas Crockford 2008 JavaScript: The Good Parts)
+            </td>
+            <td>
+              Make sure to use semi-colons, as without them it can lead to bigger issues. Sometimes, most browsers will still display content with the semicolons, however its still bad practice
+            </td>
+            <td>
+              The var keyword must be used whenever a local variable is declared, else, they will be Global variables.
+              (Douglas Crockford 2008 JavaScript: The Good Parts)
+            </td>
+            <td>
+              Make sure you comment your code as much as possible, especially the most important parts of the code. This will be especially helpful when you look back at your code
+            </td>
+            <td>
+              There are two different operators, === | !== and == | !=. It is best practice to utilize the former set especially when comparing. However you might face trouble when working with == and =!. In these situations, it will attempt to put force on the values.
+              (Douglas Crockford 2008 JavaScript: The Good Parts)
+            </td>
+            <td>
+              The value of a missing argument is set to undefined, which can break your code. Best practice is to assign default values to arguments
+            </td>
+            </table>
+              <section id="comments">
+                <div class="container">
+                  <h1>Comments</h1>
+                  <div id="comments-area"></div>
+                  <div class="comments-input">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="comment">Comment:</label><br>
+                    <textarea name="comment" id="comment" cols="70" rows="10" placeholder="This is awesome!"></textarea><br>
+                    <input type="button" value="Send!" onclick="sendComment()">
+                  </div>
+                </div>
+              </section>
+    </main>
+    <footer class="copyright">
+      <div class="content">
+        <div class="logo">
+          <p>SAKK<span class=thereddot>.</span></p>
+        </div>
+        <div id=copyright>
+          <p>&copy2018 Soma | Helen</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/commenting.js"></script>
+    
+  </body>
+</html>

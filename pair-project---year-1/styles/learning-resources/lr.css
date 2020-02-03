@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+.resource {
+    width: max-content;
+    margin: 2vh 5vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.resource:hover {
+    box-shadow: 0 0 6px 6px rgba(211, 211, 211, 0.5);
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 750px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

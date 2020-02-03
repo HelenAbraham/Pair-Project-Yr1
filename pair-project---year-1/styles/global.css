@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    --border-color: lightgrey;
+    --large-text: 3.5vh;
+    --normal-text: 3vh;
+    --medium-text: 2.5vh;
+    --small-text: 2vh;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-size: var(--normal-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: currentColor;
+}
+
+/* THE RED DOT */
+.thereddot {
+    color: red;
+    font-size: var(--large-text);
+}
+.thereddot.normal {
+    font-size: var(--normal-text);
+}
+.thereddot.small {
+    font-size: var(--medium-text);
+}
+
+/* NAVIGATION */
+/* TODO: Change to burger menu when screen too small */
+nav {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 5px 0 10px 5%;
+    display: flex;
+}
+nav #links {
+    display: inherit;
+    align-items: center;
+    margin: 0 5% 0 auto;
+    font-size: var(--medium-text);
+}
+nav #links a {
+    font-variant: small-caps;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+nav #links a:last-child { margin: 0; }
+nav #links a:hover { color: lightgrey; }
+
+main {
+    margin: 10vh 0 5vh 0;
+}
+.copyright {
+    font-size: 1.8vh;
+    padding-top: 3vh;
+    border-top: 1px solid var(--border-color);
+}
+.copyright .content {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    align-items: baseline;
+}
+.copyright .logo {
+    font-size: var(--medium-text);
+}
+.copyright #copyright {
+    margin: 0 0 0 5px;
+}
+ul {
+    margin: 0 0 0 25px;
+    font-size: var(--medium-text);
+    list-style: none;
+    
+}
+ul ul {
+    margin: 0 0 0 30px;
+    font-size: var(--small-text);
+    list-style: circle;
+}
+@media only screen and (max-width: 680px) {
+    nav {
+        display: block;
+    }
+    main {
+        margin: 15vh 0 5vh 0;
+    }
+}

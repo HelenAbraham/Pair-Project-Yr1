@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/global.js"></script>
+
+    <title>About Us - Contact Form</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>SAKK<span class=thereddot>.</span></h1>
+      </div>
+      <div id="links">
+        <a href="./index.html">Home</a>
+        <a href="./tutorials.html">Tutorials</a>
+        <a href="./learning-resources/learning_resources.html">Resources</a>
+        <a href="./profiles/profiles.html">Profiles</a>
+        <a href="./blog.html">Blog<span class="thereddot small">.</span></a>
+        <a href="./about.html">About Us</a>
+      </div>
+    </nav>
+    <main>
+              <h1 id=contact-title> Contact Page </h1>
+      <center>
+        <div class="box-1">
+          <h4> Contact Helen at 07737985963 </h4>
+          <h4> Contact Soma at 07877875026 </h4>
+        </div>
+        <div class="box-2">
+          <h4> Email </h4>
+          <p> helenabraham789@gmail.com | SomorjaiS@cardiff.ac.uk </p>
+        </div>
+      </center>
+      <br>
+      <div class="container">
+      <form method="post" id=form>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" required name="firstname" placeholder="Your name...">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" required placeholder="Your last name...">
+
+        <label for="country">Country</label>
+       <select id="country" name="country" required>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <option value="uk">UK</option>
+          <option value="germany">Germany</option>
+          <option value="hungary">Hungary</option>
+        </select>
+
+        <label for="writesomething">Write Something</label>
+        <textarea id="writesomething" required name="Write Something" placeholder="Write something..." style="height:200px"></textarea>
+
+        <input type="button" value="Go!" onclick='validateFormData();'>
+
+      </form>
+
+      <section id=socials>
+        <h2> Socialize </h2>
+        <div id="links">
+          <div id="links-part-one">
+            <a href="http://facebook.com" class="fa fa-facebook"></a>
+            <a href="http://twitter.com" class="fa fa-twitter"></a>
+          </div>
+          <div id="links-part-two">
+            <a href="http://instagram.com" class="fa fa-instagram"></a>
+            <a href="http://google.com" class="fa fa-google"></a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="copyright">
+      <div class="content">
+        <div class="logo">
+          <p>SAKK<span class=thereddot>.</span></p>
+        </div>
+        <div id=copyright>
+          <p>&copy2018 Soma | Helen</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/about.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/learning-resources/python.css">
+    <link rel="stylesheet" href="../styles/learning-resources/comments.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>HTML & CSS - Learn </title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>SAKK<span class=thereddot>.</span></h1>
+      </div>
+      <div id="links">
+        <a href="../index.html">Home</a>
+        <a href="../tutorials.html">Tutorials</a>
+        <a href="./learning_resources.html">Resources</a>
+        <a href="../profiles/profiles.html">Profiles</a>
+        <a href="../blog.html">Blog<span class="thereddot small">.</span></a>
+        <a href="../about.html">About Us</a>
+      </div>
+    </nav>
+    <main>
+        <h1>Python quality code guide and best practices</h1>
+        <iframe src="https://drive.google.com/file/d/1YhmMe8GEEfAE-7lbLKFoLe6hnJB3Bl9F/preview"
+        frameborder=0 id=python-pdf></iframe>
+        <div class="failsafe">
+            <a href="../pdf/python.pdf">In case it doesn't load.</a>
+        </div>
+        <section id="comments">
+          <div class="container">
+            <h1>Comments</h1>
+            <div id="comments-area"></div>
+            <div class="comments-input">
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" id="name"><br>
+              <label for="comment">Comment:</label><br>
+              <textarea name="comment" id="comment" cols="70" rows="10" placeholder="This is awesome!"></textarea><br>
+              <input type="button" value="Send!" onclick="sendComment()">
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="copyright">
+      <div class="content">
+        <div class="logo">
+          <p>SAKK<span class=thereddot>.</span></p>
+        </div>
+        <div id=copyright>
+          <p>&copy2018 Soma | Helen</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/commenting.js"></script>
+  </body>
+</html>
